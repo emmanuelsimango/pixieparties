@@ -1,4 +1,4 @@
 .main-content{
-  min-height: 65vh;
-  background:url("../../../assets/img/bg.jpg");
+  min-height: 85vh;
+  background: url("../../../assets/img/bg.jpg") no-repeat ;
 }
