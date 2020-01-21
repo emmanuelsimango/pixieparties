@@ -1,4 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,500|Raleway&display=swap');
+
 .main-content{
   min-height: 85vh;
-  background: url("../../../assets/img/bg.jpg") no-repeat ;
+  background: url("../../../assets/img/bg.jpg") no-repeat center;
+  background-size: cover;
+  opacity: .4;
+}
+
+.main-container{
+  background: black;
+}
+
+.intro-branding{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 100%;
+}
+
+.intro-branding h4{
+    font-family: 'Raleway', sans-serif;
 }
