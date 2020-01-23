@@ -19,9 +19,15 @@
   border-radius: 50rem;
   transform: scale(1.2);
 }
+.cart-btn:hover{
+  border: none;
+  color: rgb(252, 197, 197);
+  /* border-radius:  */
+  transform: scale(1.5);
+}
 
 .nav-bg{
-  background: rgba(255, 217, 0, 0.705)
+  background: rgba(255, 115, 115, 0.705)
 }
 .navbar-toggler, .navbar-toggler-icon  {
   border-color: white;
