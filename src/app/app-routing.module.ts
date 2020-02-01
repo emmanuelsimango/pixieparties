@@ -11,18 +11,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
+import { AuthGuardService } from './auth-guard.service';
 
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'products', component: ProductsComponent},
-  {path: 'my-orders', component: MyOrdersComponent},
   {path: 'shopping-cart', component: ShoppingCartComponent},
-  {path: 'check-out', component: CheckOutComponent},
-  {path: 'order-success', component: OrderSuccessComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'admin/products', component: AdminProductsComponent},
-  {path: 'admin/orders', component: AdminOrdersComponent},
+
+  {path: 'my-orders', component: MyOrdersComponent,  canActivate: [AuthGuardService]},
+  {path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuardService]},
+  {path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuardService]},
+
+  {path: 'admin/products', component: AdminProductsComponent, canActivate: [AuthGuardService]},
+  {path: 'admin/orders', component: AdminOrdersComponent,  canActivate: [AuthGuardService]},
 ];
 
 @NgModule({

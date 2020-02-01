@@ -1,3 +1,4 @@
+import { AuthService } from './auth.service';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared/shared.module';
 import { environment } from './../environments/environment';
@@ -9,6 +10,8 @@ import { AngularFireDatabaseModule   } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AuthGuardService } from './auth-guard.service';
 
 
 @NgModule({
@@ -22,8 +25,12 @@ import { AppRoutingModule } from './app-routing.module';
     SharedModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AngularFireAuthModule,
   ],
-  providers: [],
+  providers: [
+      AuthService,
+      AuthGuardService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
