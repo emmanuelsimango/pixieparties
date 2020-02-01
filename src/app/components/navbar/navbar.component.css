@@ -2,7 +2,7 @@
   font-family: 'Dancing Script', cursive;
   font-size: 2.4rem;
   text-decoration: none;
-  color: rgb(0, 17, 255);
+  color: white;
 }
 
 .nav-link {
@@ -12,7 +12,17 @@
   padding-right: 1rem;
   transition: transform .5s;
 }
+.dropdown-toggle{
+    cursor: pointer;
+}
 
+.nav-item ul.dropdown-menu li.dropdown-item{
+    cursor: pointer;
+}
+.nav-item ul.dropdown-menu li.dropdown-item:hover{
+    background: rgb(252, 197, 197);
+    color: white;
+}
 .nav-link:hover{
   border: 2px solid rgb(252, 197, 197);
   color: rgb(252, 197, 197);
