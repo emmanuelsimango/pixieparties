@@ -13,36 +13,42 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.component';
 import { AuthGuard } from './auth-guard.service';
 import { AdminAuthGaurd } from './admin-auth-gaurd.service';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: 'shopping-cart', component: ShoppingCartComponent},
-  {path: 'login', component: LoginComponent},
+    { path: '', component: HomeComponent },
+    { path: 'products', component: ProductsComponent },
+    { path: 'shopping-cart', component: ShoppingCartComponent },
+    { path: 'login', component: LoginComponent },
 
-  {path: 'my-orders', component: MyOrdersComponent,  canActivate: [AuthGuard]},
-  {path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuard]},
-  {path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuard]},
+    { path: 'my-orders', component: MyOrdersComponent, canActivate: [AuthGuard] },
+    { path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuard] },
+    { path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuard] },
 
-  {
-      path: 'admin-products',
-      component: AdminProductsComponent,
-      canActivate: [AuthGuard, AdminAuthGaurd]
+    {
+        path: 'admin-products',
+        component: AdminProductsComponent,
+        canActivate: [AuthGuard, AdminAuthGaurd]
     },
-  {
-      path: 'admin-orders',
-      component: AdminOrdersComponent,
-      canActivate: [AuthGuard, AdminAuthGaurd]
+    {
+        path: 'admin-products/new',
+        component: ProductFormComponent,
+        canActivate: [AuthGuard, AdminAuthGaurd]
+    },
+    {
+        path: 'admin-orders',
+        component: AdminOrdersComponent,
+        canActivate: [AuthGuard, AdminAuthGaurd]
     },
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [
-    RouterModule.forRoot(routes),
-    CommonModule,
-  ],
-  exports: [ RouterModule ]
+    declarations: [],
+    imports: [
+        RouterModule.forRoot(routes),
+        CommonModule,
+    ],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }

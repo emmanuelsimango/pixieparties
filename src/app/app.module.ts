@@ -1,3 +1,4 @@
+import { CategoryService } from './category.service';
 import { UserService } from './user.service';
 import { AuthService } from './auth.service';
 import { RouterModule } from '@angular/router';
@@ -14,11 +15,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AuthGuard as AuthGuard } from './auth-guard.service';
 import { AdminAuthGaurd as AdminAuthGaurd } from './admin-auth-gaurd.service';
+import { ProductFormComponent } from './admin/product-form/product-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    ProductFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +36,8 @@ import { AdminAuthGaurd as AdminAuthGaurd } from './admin-auth-gaurd.service';
       AuthService,
       AuthGuard,
       UserService,
-      AdminAuthGaurd
+      AdminAuthGaurd,
+      CategoryService,
   ],
   bootstrap: [AppComponent]
 })
