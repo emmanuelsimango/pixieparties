@@ -24,14 +24,16 @@
       <!-- <li class="nav-item">
         <a class="nav-link" routerLink = "/shopping-cart" >Shopping Cart</a>
       </li> -->
-      <li *ngIf="auth.user$ | async as user; else anonymousUser" class="nav-item dropdown">
+      <li *ngIf="appUser as user; else anonymousUser" class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-           {{user.displayName}} </a>
+           {{appUser.name}} </a>
         <ul class="dropdown-menu" aria-labelledby="dropdownId">
 
           <li class="dropdown-item" routerLink='my-orders' >My Orders</li>
-          <li class="dropdown-item" routerLink='admin/orders' >Manage Orders</li>
-          <li class="dropdown-item" routerLink='admin/products' >Manage Products</li>
+          <ng-container *ngIf="appUser.isAdmin">
+              <li class="dropdown-item" routerLink='admin-orders' >Manage Orders</li>
+              <li class="dropdown-item" routerLink='admin-products' >Manage Products</li>
+        </ng-container>
           <li class="dropdown-item" (click)="logout()" >Log Out</li>
         </ul>
       </li>
