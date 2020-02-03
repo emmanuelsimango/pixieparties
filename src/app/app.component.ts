@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-    constructor(private userService: UserService, private auth: AuthService, router: Router){
+    constructor(private userService: UserService, private auth: AuthService, router: Router) {
         this.auth.user$.subscribe(user => {
             if (user) {
                 userService.save(user);

@@ -3,33 +3,33 @@
         <div class="row pt-4 mt-4">
             <div class="col-sm-12 col-md-6 mx-auto pt-4 mt-4">
 
-                <form>
+                <form #f="ngForm" (ngSubmit)="save(f.value)">
                     <div class="form-group">
                         <label for="title">Title</label>
-                        <input type="text" id="title" class="form-control rounded-pill">
+                        <input type="text" ngModel name="title" id="title" class="form-control rounded-pill">
                     </div>
                     <div class="form-group">
                         <label for="price">Price</label>
                         <div class="input-group mb-3 border rounded-pill">
                             <div class="input-group-prepend rounded-pill">
-                              <span class="input-group-text border-0 bg-light">$</span>
+                              <span class="input-group-text border-0 bg-transparent">$</span>
                             </div>
-                            <input id="price" type="text" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
+                            <input id="price" ngModel name="price" type="text" class="form-control border-0" aria-label="Amount (to the nearest dollar)">
                             <div class="input-group-append rounded-pill">
-                              <span class="input-group-text border-0 bg-light">.00</span>
+                              <span class="input-group-text border-0 bg-transparent">.00</span>
                             </div>
                           </div>
                     </div>
                     <div class="form-group">
                         <label for="category">Category</label>
-                        <select id="category" class="form-control rounded-pill">
+                        <select id="category" name="category" ngModel class="form-control rounded-pill">
                             <option value=""></option>
-                            <option *ngFor="let c of categories$ | async" [value]="c.$key">{{c.name}} </option>
+                            <option *ngFor="let c of categories$ | async" [value]="c.key">{{c.name.name}} </option>
                         </select>
                     </div>
                     <div class="form-group">
                         <label for="imageUrl">Image Url</label>
-                        <input type="text" id="imageUrl" class="form-control rounded-pill">
+                        <input type="text" name="imageUrl" ngModel id="imageUrl"  class="form-control rounded-pill">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-outline-primary rounded-pill mx-auto">Save</button>

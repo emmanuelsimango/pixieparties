@@ -1,12 +1,11 @@
 import { CategoryService } from './category.service';
 import { UserService } from './user.service';
 import { AuthService } from './auth.service';
-import { RouterModule } from '@angular/router';
+
 import { SharedModule } from './shared/shared.module';
 import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { from } from 'rxjs';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireDatabaseModule   } from '@angular/fire/database';
 import { FormsModule } from '@angular/forms';
