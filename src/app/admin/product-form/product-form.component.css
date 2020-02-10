@@ -1,0 +1,9 @@
+div.form-group{
+    position: relative;
+}
+
+div.form-group div.alert.alert-danger{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
