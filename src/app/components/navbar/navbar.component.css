@@ -2,12 +2,11 @@
   font-family: 'Dancing Script', cursive;
   font-size: 2.4rem;
   text-decoration: none;
-  color: white;
 }
 
 .nav-link {
   font-family: 'Raleway', sans-serif;
-  color: white;
+  color: #F2B037;
   padding-left: 1rem;
   padding-right: 1rem;
   transition: transform .5s;
@@ -20,24 +19,25 @@
     cursor: pointer;
 }
 .nav-item ul.dropdown-menu li.dropdown-item:hover{
-    background: rgb(252, 197, 197);
+    background: #FF02C4;
     color: white;
 }
 .nav-link:hover{
-  border: 2px solid rgb(252, 197, 197);
-  color: rgb(252, 197, 197);
+  border: 2px solid #FF02C4;
+  color: #FF02C4;
   border-radius: 50rem;
   transform: scale(1.2);
 }
 .cart-btn:hover{
   border: none;
-  color: rgb(252, 197, 197);
+  color: #FF02C4;
   /* border-radius:  */
   transform: scale(1.5);
 }
 
 .nav-bg{
-  background: #5677FE
+  background: white
+  
 }
 .navbar-toggler, .navbar-toggler-icon  {
   border-color: white;
@@ -45,7 +45,7 @@
 }
 
 .img-logo{
-    max-height: 4rem;
+    max-height: 6rem;
     overflow: visible;
     padding-left: 1.2rem;
 }
@@ -54,7 +54,7 @@
     position: absolute;
     top: 0;
     left: 0;
-
+    background: white;
     padding-right: 2rem;
     border-bottom-right-radius: 30%;
 }
