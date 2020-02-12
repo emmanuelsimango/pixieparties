@@ -14,6 +14,21 @@ export class NavbarComponent implements OnInit {
     appUser: AppUser;
     constructor(private auth: AuthService) {
         auth.appUser$.subscribe(appUser => this.appUser = appUser);
+
+
+        window.onscroll = () => {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.querySelector('.navbar').classList.add('nav-bg');
+                document.querySelector('.navbar img').classList.add('img-small');
+                document.querySelector('.navbar-brand').classList.add('bg-light');
+            } else {
+                document.querySelector('.navbar').classList.remove('nav-bg');
+                document.querySelector('.navbar img').classList.remove('img-small');
+                document.querySelector('.navbar-brand').classList.remove('bg-light');
+                // document.querySelector("#logo").classList.add("display-40");
+            }
+
+        }
     }
 
     ngOnInit() {
@@ -22,4 +37,6 @@ export class NavbarComponent implements OnInit {
     logout() {
         this.auth.logout();
     }
+
+
 }

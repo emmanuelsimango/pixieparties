@@ -1,60 +1,69 @@
-.navbar-brand{
-  font-family: 'Dancing Script', cursive;
+.navbar-brand {
+  font-family: "Dancing Script", cursive;
   font-size: 2.4rem;
   text-decoration: none;
+  padding-left: 1rem;
+  min-width: 10rem;
+  -webkit-clip-path: circle(85.6% at 31% 48%);
+  clip-path: circle(85.6% at 31% 48%);
+  transition: all 1.4s ease-in-out;
+
+}
+.navbar{
+    transition: all 1.2s ease-in-out;
+}
+
+.navbar-brand img {
+  max-height: 6rem;
+}
+
+img{
+    transition: max-height .7s ease-in-out !important;
+    -webkit-transition: max-height .7s ease-in-out !important;
+}
+
+
+.img-small{
+    max-height: 4rem !important;
 }
 
 .nav-link {
-  font-family: 'Raleway', sans-serif;
-  color: #F2B037;
+  font-family: "Raleway", sans-serif;
+  color: #f2b037;
   padding-left: 1rem;
   padding-right: 1rem;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
-.dropdown-toggle{
-    cursor: pointer;
+.dropdown-toggle {
+  cursor: pointer;
 }
 
-.nav-item ul.dropdown-menu li.dropdown-item{
-    cursor: pointer;
+.nav-item ul.dropdown-menu li.dropdown-item {
+  cursor: pointer;
 }
-.nav-item ul.dropdown-menu li.dropdown-item:hover{
-    background: #FF02C4;
-    color: white;
+.nav-item ul.dropdown-menu li.dropdown-item:hover {
+  background: white;
+  color: white;
 }
-.nav-link:hover{
-  border: 2px solid #FF02C4;
-  color: #FF02C4;
+.nav-link:hover {
+  border: 2px solid white;
+  color: white;
   border-radius: 50rem;
   transform: scale(1.2);
 }
-.cart-btn:hover{
+.cart-btn:hover {
   border: none;
-  color: #FF02C4;
+  color: white;
   /* border-radius:  */
   transform: scale(1.5);
 }
 
-.nav-bg{
-  background: white
-  
-}
-.navbar-toggler, .navbar-toggler-icon  {
-  border-color: white;
-  color: white;
+.nav-bg {
+  background: #ff01c4;
 }
 
-.img-logo{
-    max-height: 6rem;
-    overflow: visible;
-    padding-left: 1.2rem;
-}
-
-.navbar-brand{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: white;
-    padding-right: 2rem;
-    border-bottom-right-radius: 30%;
+/* Top nav */
+.top-nav {
+  min-width: 100%;
+  position: absolute;
 }
