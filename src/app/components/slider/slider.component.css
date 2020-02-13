@@ -1,0 +1,9 @@
+.carousel-item img{
+    opacity: .4;
+    max-height: 9rem;
+}
+
+#slider-nav{
+    background: black;
+
+}

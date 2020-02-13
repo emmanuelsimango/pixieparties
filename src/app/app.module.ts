@@ -1,7 +1,7 @@
-import { ProductService } from './product.service';
-import { CategoryService } from './category.service';
-import { UserService } from './user.service';
-import { AuthService } from './auth.service';
+import { ProductService } from './services/product.service';
+import { CategoryService } from './services/category.service';
+import { UserService } from './services/user.service';
+import { AuthService } from './services/auth.service';
 
 import { SharedModule } from './shared/shared.module';
 import { environment } from './../environments/environment';
@@ -13,15 +13,15 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AngularFireAuthModule } from '@angular/fire/auth';
-import { AuthGuard as AuthGuard } from './auth-guard.service';
-import { AdminAuthGaurd as AdminAuthGaurd } from './admin-auth-gaurd.service';
+import { AuthGuard as AuthGuard } from './services/auth-guard.service';
+import { AdminAuthGaurd as AdminAuthGaurd } from './services/admin-auth-gaurd.service';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductFormComponent,
+
   ],
   imports: [
     BrowserModule,

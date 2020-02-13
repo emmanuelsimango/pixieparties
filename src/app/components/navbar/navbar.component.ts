@@ -1,5 +1,5 @@
 import { AppUser } from './../../models/app-user';
-import { AuthService } from './../../auth.service';
+import { AuthService } from '../../services/auth.service';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';

@@ -1,3 +1,4 @@
+import { SliderComponent } from './../components/slider/slider.component';
 import { RouterModule } from '@angular/router';
 import { AdminProductsComponent } from './../admin/admin-products/admin-products.component';
 import { MyOrdersComponent } from './../my-orders/my-orders.component';
@@ -28,6 +29,7 @@ import { AdminOrdersComponent } from '../admin/admin-orders/admin-orders.compone
         AdminProductsComponent,
         AdminOrdersComponent,
         LoginComponent,
+        SliderComponent
     ],
     imports: [
         CommonModule,
@@ -44,7 +46,8 @@ import { AdminOrdersComponent } from '../admin/admin-orders/admin-orders.compone
         MyOrdersComponent,
         AdminProductsComponent,
         AdminOrdersComponent,
-        LoginComponent
+        LoginComponent,
+        SliderComponent
     ]
 })
 export class SharedModule { }
