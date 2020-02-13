@@ -14,14 +14,21 @@ export class ProductService {
 
     getAll() {
         return this.db.list('/products').snapshotChanges().pipe(
-            map(category => {
-                return category.map( a => {
-                    const name = a.payload.toJSON();
+            map(prod => {
+                return prod.map( a => {
+                    const data = a.payload.toJSON();
                     const key = a.key;
-                    return  { key, name} ;
+                    return  { key, data} ;
                 });
             })
             );
+    }
 
+    get(productId) {
+        return this.db.object('/products/' + productId).valueChanges();
+    }
+
+    update(productId, product) {
+       return this.db.object('/products/' + productId).update(product);
     }
 }
