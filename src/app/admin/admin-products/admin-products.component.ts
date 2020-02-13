@@ -12,6 +12,10 @@ export class AdminProductsComponent implements OnInit {
         this.products$ = this.productService.getAll();
     }
 
+    filter(query: string){
+        
+    }
+
     ngOnInit() {
     }
 
