@@ -3,6 +3,7 @@ import { CategoryService } from './services/category.service';
 import { UserService } from './services/user.service';
 import { AuthService } from './services/auth.service';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { environment } from './../environments/environment';
 import { BrowserModule } from '@angular/platform-browser';
@@ -25,6 +26,7 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     FormsModule,
     SharedModule,

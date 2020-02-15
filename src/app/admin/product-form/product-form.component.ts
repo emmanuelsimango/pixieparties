@@ -26,7 +26,7 @@ export class ProductFormComponent implements OnInit {
         if (this.id) {
             this.productService.get(this.id).pipe(
                 take(1),
-            ).subscribe( p => {console.log(p); this.product = p });
+            ).subscribe( p => {console.log(p); this.product = p ; });
         }
 
     }
@@ -37,7 +37,7 @@ export class ProductFormComponent implements OnInit {
     }
 
     delete() {
-        if (confirm('Are you sure you want to delete this product')){
+        if (confirm('Are you sure you want to delete this product')) {
             this.productService.delete(this.id);
             this.router.navigate(['/admin-products']);
         }

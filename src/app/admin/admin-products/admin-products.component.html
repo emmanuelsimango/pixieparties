@@ -20,9 +20,9 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let p of products$ | async">
-                <td scope="row"> {{p.data.title}} </td>
-                <td> {{p.data.price}} </td>
+            <tr *ngFor="let p of filteredProducts">
+                <td scope="row"> {{p.title}} </td>
+                <td> {{p.price}} </td>
                 <td>
                     <a class="btn btn-outline-primary btn-sm rounded-pill px-3" [routerLink]="['/admin-products/',p.key]" >Edit</a>
                 </td>
