@@ -2,7 +2,6 @@ import { Product } from 'src/app/models/product';
 import { AngularFireDatabase } from '@angular/fire/database';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
-import { Product } from '../models/product';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -22,14 +21,14 @@ export class ProductService {
                     const data = a.payload.toJSON();
                     const key = a.key;
                     // tslint:disable-next-line: prefer-const
-                    let product: Product;
-                    product.key = key;
-                    product.title = data.title;
-                    product.price = data.price;
-                    product.category = data.category;
-                    product.imageUrl = data.imageUrl;
+                    var prod: Product;
+                    prod.key = key;
+                    prod.title = data['title'];
+                    prod.price = data['price'];
+                    prod.category = data['category'];
+                    prod.imageUrl = data['imageUrl'];
                     // return  { key, data} ;
-                    return  product ;
+                    return  prod ;
                 });
             })
             );
