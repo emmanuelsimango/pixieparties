@@ -31,10 +31,11 @@ img{
 
 .nav-link {
   font-family: "Raleway", sans-serif;
-  color: #f2b037;
+  color: white;
   padding-left: 1rem;
   padding-right: 1rem;
   transition: transform 0.5s;
+  font-weight: bold;
 }
 .dropdown-toggle {
   cursor: pointer;
@@ -61,7 +62,7 @@ img{
 }
 
 .nav-bg {
-  background: #3a3a38;
+  background: rgba(255, 1, 196, 0.767);
 }
 
 /* Top nav */
