@@ -1,3 +1,4 @@
+import { ContactComponent } from './../components/contact/contact.component';
 import { SliderComponent } from './../components/slider/slider.component';
 import { RouterModule } from '@angular/router';
 import { AdminProductsComponent } from './../admin/admin-products/admin-products.component';
@@ -29,7 +30,8 @@ import { AdminOrdersComponent } from '../admin/admin-orders/admin-orders.compone
         AdminProductsComponent,
         AdminOrdersComponent,
         LoginComponent,
-        SliderComponent
+        SliderComponent,
+        ContactComponent
     ],
     imports: [
         CommonModule,
@@ -47,7 +49,8 @@ import { AdminOrdersComponent } from '../admin/admin-orders/admin-orders.compone
         AdminProductsComponent,
         AdminOrdersComponent,
         LoginComponent,
-        SliderComponent
+        SliderComponent,
+        ContactComponent
     ]
 })
 export class SharedModule { }
