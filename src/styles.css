@@ -39,3 +39,23 @@ body::-webkit-scrollbar {
   button:hover{
       transform: scale(1.1);
   }
+
+  .btn-outline-primary{
+    border-color: #ff01c4;
+    color: #ff01c4;
+}
+.btn{
+    font-weight: normal !important;
+    text-transform: lowercase !important;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.text-primary{
+    color: #ff01c4 !important;
+
+}
+.btn-outline-primary:hover{
+    background-color: #ff01c4;
+    color: white!important;
+    border-color: white;
+}
