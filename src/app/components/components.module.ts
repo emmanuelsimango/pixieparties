@@ -5,18 +5,19 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { PackagesComponent } from './packages/packages.component';
 
 
 
 @NgModule({
   declarations: [
-      ContactComponent,NavbarComponent,FooterComponent, SliderComponent, CarouselComponent
+      ContactComponent,NavbarComponent,FooterComponent, SliderComponent, CarouselComponent,PackagesComponent
     ],
   imports: [
     CommonModule
   ],
   exports:[
-    ContactComponent,NavbarComponent,FooterComponent, SliderComponent,CarouselComponent
+    ContactComponent,NavbarComponent,FooterComponent, SliderComponent,CarouselComponent,PackagesComponent
 
   ]
 })

@@ -1,0 +1,15 @@
+.carousel-item {
+    min-height: 80vh;
+    position: relative;
+    
+}
+
+.carousel-item .carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 10rem;
+    width: 50%;
+    background-color: rgba(68, 67, 67, 0.342);
+    transform: translate(-50%, -50%);
+}

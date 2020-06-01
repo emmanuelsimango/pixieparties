@@ -7,7 +7,7 @@ import { OrderSuccessComponent } from '../pages/order-success/order-success.comp
 import { CheckOutComponent } from '../pages/check-out/check-out.component';
 import { ShoppingCartComponent } from '../pages/shopping-cart/shopping-cart.component';
 import { ProductsComponent } from '../pages/products/products.component';
-import { PackagesComponent } from '../pages/packages/packages.component';
+import { PackagesComponent } from '../components/packages/packages.component';
 import { LoginComponent } from '../pages/login/login.component';
 import { HomeComponent } from './../pages/home/home.component';
 import { NgModule, Component } from '@angular/core';
@@ -21,7 +21,6 @@ import { ComponentsModule } from '../components/components.module';
 @NgModule({
     declarations: [
         HomeComponent,
-        PackagesComponent,
         ProductsComponent,
         ShoppingCartComponent,
         CheckOutComponent,
@@ -39,7 +38,6 @@ import { ComponentsModule } from '../components/components.module';
     ],
     exports: [
         HomeComponent,
-        PackagesComponent,
         ProductsComponent,
         ShoppingCartComponent,
         CheckOutComponent,
