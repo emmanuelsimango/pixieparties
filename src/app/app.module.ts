@@ -18,12 +18,18 @@ import { AuthGuard as AuthGuard } from './services/auth-guard.service';
 import { AdminAuthGaurd as AdminAuthGaurd } from './services/admin-auth-gaurd.service';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { ComponentsModule } from './components/components.module';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductFormComponent,
+    GalleryComponent,
+    AboutComponent,
+    ContactUsComponent,
   ],
   imports: [
     BrowserModule,

@@ -6,18 +6,21 @@ import { FooterComponent } from './footer/footer.component';
 import { SliderComponent } from './slider/slider.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { PackagesComponent } from './packages/packages.component';
+import { RouterModule } from '@angular/router';
+import { HeaderComponent } from './header/header.component';
 
 
 
 @NgModule({
   declarations: [
-      ContactComponent,NavbarComponent,FooterComponent, SliderComponent, CarouselComponent,PackagesComponent
+      ContactComponent,NavbarComponent,FooterComponent, SliderComponent, CarouselComponent,PackagesComponent, HeaderComponent
     ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports:[
-    ContactComponent,NavbarComponent,FooterComponent, SliderComponent,CarouselComponent,PackagesComponent
+    ContactComponent,NavbarComponent,FooterComponent, SliderComponent,CarouselComponent,PackagesComponent,HeaderComponent
 
   ]
 })

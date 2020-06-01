@@ -1,0 +1,11 @@
+section{
+    min-height: 60vh;
+    border-bottom: 2px solid goldenrod;
+    backdrop-filter: grayscale(.8) !important;
+}
+
+.title{
+    color: goldenrod;
+    font-size: 4rem;
+    font-family:  "Dancing Script", cursive;
+}

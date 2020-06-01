@@ -1,7 +1,7 @@
 .carousel-item {
     min-height: 80vh;
     position: relative;
-    
+    backdrop-filter: contrast(.8) !important;
 }
 
 .carousel-item .carousel-caption{

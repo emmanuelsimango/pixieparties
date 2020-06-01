@@ -13,10 +13,18 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
 import { AuthGuard } from './services/auth-guard.service';
 import { AdminAuthGaurd } from './services/admin-auth-gaurd.service';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 
 const routes: Routes = [
     { path: '', component: HomeComponent },
+    { path: 'gallery', component: GalleryComponent },
+    { path: 'about', component:AboutComponent },
+    { path: 'contact', component: ContactUsComponent },
+
+
     { path: 'products', component: ProductsComponent },
     { path: 'shopping-cart', component: ShoppingCartComponent },
     { path: 'login', component: LoginComponent },
