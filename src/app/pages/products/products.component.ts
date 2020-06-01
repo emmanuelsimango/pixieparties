@@ -1,8 +1,8 @@
 import { Subscription } from 'rxjs';
-import { ProductService } from './../services/product.service';
-import { CategoryService } from './../services/category.service';
+import { ProductService } from '../../services/product.service';
+import { CategoryService } from '../../services/category.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Product } from '../models/product';
+import { Product } from '../../models/product';
 
 @Component({
   selector: 'app-products',

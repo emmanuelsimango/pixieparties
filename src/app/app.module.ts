@@ -17,13 +17,13 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AuthGuard as AuthGuard } from './services/auth-guard.service';
 import { AdminAuthGaurd as AdminAuthGaurd } from './services/admin-auth-gaurd.service';
 import { ProductFormComponent } from './admin/product-form/product-form.component';
+import { ComponentsModule } from './components/components.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductFormComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -34,6 +34,7 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+    ComponentsModule
   ],
   providers: [
       AuthService,

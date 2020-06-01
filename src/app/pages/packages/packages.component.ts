@@ -1,4 +1,4 @@
-import { fade, slideLeft } from './../../../animations';
+import { fade, slideLeft } from '../../animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
