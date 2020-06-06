@@ -1,0 +1,51 @@
+.about-2 {
+    background: #F7F7F7;
+  }
+  
+  .about-2 .checklist {
+    padding-left: 30px;
+  }
+  
+  .about-2 .checklist li {
+    position: relative;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #777;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .about-2 .checklist li:before {
+    position: absolute;
+    margin-right: 12px;
+    margin-left: -45px;
+    content: "\f375";
+    font-family: "themefisher-font";
+    opacity: 1;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 20px;
+  }
+  .border {
+    height: 2px;
+    margin: 20px auto 20px;
+    position: relative;
+    width: 80px;
+    background: #28ABE3;
+  }
+  .btn-main {
+    background: #28ABE3;
+    border: 1px solid #28ABE3;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    border-radius: 40px;
+  }
+  
+  .btn-main:hover {
+    color: #fff;
+  }
+  
+  

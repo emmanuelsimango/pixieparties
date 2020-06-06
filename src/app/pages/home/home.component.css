@@ -21,3 +21,18 @@
 .intro-branding h4{
     font-family: 'Raleway', sans-serif;
 }
+.btn-main {
+  background: #28ABE3;
+  border: 1px solid #28ABE3;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+  border-radius: 40px;
+}
+
+.btn-main:hover {
+  color: #fff;
+}
