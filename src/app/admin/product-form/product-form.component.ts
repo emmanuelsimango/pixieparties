@@ -12,7 +12,7 @@ import { take, map } from 'rxjs/operators';
 })
 export class ProductFormComponent implements OnInit {
     categories$;
-    product = {};
+    product:any;
     id: string;
     constructor(
         private router: Router,

@@ -13,7 +13,6 @@ import { HomeComponent } from './../pages/home/home.component';
 import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AdminOrdersComponent } from '../admin/admin-orders/admin-orders.component';
-import { AboutComponent } from '../components/about/about.component';
 import { ComponentsModule } from '../components/components.module';
 
 
@@ -28,8 +27,7 @@ import { ComponentsModule } from '../components/components.module';
         MyOrdersComponent,
         AdminProductsComponent,
         AdminOrdersComponent,
-        LoginComponent,
-        AboutComponent,
+        LoginComponent
     ],
     imports: [
         CommonModule,
@@ -46,7 +44,6 @@ import { ComponentsModule } from '../components/components.module';
         AdminProductsComponent,
         AdminOrdersComponent,
         LoginComponent,
-        AboutComponent,
     ]
 })
 export class SharedModule { }

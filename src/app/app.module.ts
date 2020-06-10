@@ -19,8 +19,9 @@ import { AdminAuthGaurd as AdminAuthGaurd } from './services/admin-auth-gaurd.se
 import { ProductFormComponent } from './admin/product-form/product-form.component';
 import { ComponentsModule } from './components/components.module';
 import { GalleryComponent } from './pages/gallery/gallery.component';
-import { AboutComponent } from './pages/about/about.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 
 @NgModule({
@@ -28,8 +29,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     AppComponent,
     ProductFormComponent,
     GalleryComponent,
-    AboutComponent,
     ContactUsComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-    ComponentsModule
+    ComponentsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
       AuthService,
