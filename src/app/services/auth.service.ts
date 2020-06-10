@@ -22,7 +22,7 @@ export class AuthService {
         if (returnUrl) {
             localStorage.setItem('returnUrl', returnUrl);
         }
-        this.afAuth.auth.signInWithRedirect(
+      return  this.afAuth.auth.signInWithRedirect(
             new firebase.auth.GoogleAuthProvider()
         );
     }
